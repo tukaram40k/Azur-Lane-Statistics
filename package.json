@@ -1,0 +1,23 @@
+{
+  "name": "azur-lane-statistics",
+  "version": "1.0.0",
+  "description": "A program to collect statistics on blueprint drop rates in Azur Lane.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tukaram40k/Azur-Lane-Statistics.git"
+  },
+  "author": "tukaram40k",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tukaram40k/Azur-Lane-Statistics/issues"
+  },
+  "homepage": "https://github.com/tukaram40k/Azur-Lane-Statistics#readme",
+  "devDependencies": {
+    "electron": "^34.0.1"
+  }
+}

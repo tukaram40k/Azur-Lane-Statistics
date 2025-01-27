@@ -1,7 +1,7 @@
 import prettytable as pt
 import os
 
-folder_name = "./stats"
+folder_name = "./stats" 
 files = []
 map_names = []
 
@@ -19,14 +19,14 @@ for file, map in zip(files, map_names):
     if stats == []:
         drops = '0'
         runs = '0'
-        rezult = float(0)
+        result = float(0)
     else:
         drops, runs = zip(*(i.split(',') for i in stats))
-        rezult = sum(int(i) for i in drops)/sum(int(i) for i in runs)
+        result = sum(int(i) for i in drops)/sum(int(i) for i in runs)
     
-    if rezult == 0:
-        table.add_row([map, sum(int(i) for i in runs), f'{round(rezult*100, 2)}%', 'inf'])
+    if result == 0:
+        table.add_row([map, sum(int(i) for i in runs), f'{round(result*100, 2)}%', 'inf'])
     else:
-        table.add_row([map, sum(int(i) for i in runs), f'{round(rezult*100, 2)}%', round(1/rezult, 2)])
+        table.add_row([map, sum(int(i) for i in runs), f'{round(result*100, 2)}%', round(1/result, 2)])
     
 print(table)
