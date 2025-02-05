@@ -1,0 +1,22 @@
+body {
+    background-color: #000000;
+    color: #dcdcdc;
+}
+
+.main-container {
+    margin: 5vh;
+    padding: 10px 10px 20px 20px;
+    border-radius: 10px;
+    background-color: #353333;
+    height: 80vh;
+}
+
+.table-container {
+    margin-inline: auto;
+}
+
+pre {
+    white-space: pre-wrap;
+    padding: 10px;
+    margin-top: 10px;
+}

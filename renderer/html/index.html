@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-        <meta
-                http-equiv="Content-Security-Policy"
-                content="default-src 'self'; script-src 'self'"
-        />
-        <meta
-                http-equiv="X-Content-Security-Policy"
-                content="default-src 'self'; script-src 'self'"
-        />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Azur Lane Stats Viewer</title>
+        <link rel="stylesheet" href="../css/index.css">
     </head>
     <body>
-        <h1>Azur Lane Stats</h1>
-        <button id="launch-python-script">Launch</button>
-        <button id="load-file">Load Table</button>
-        <pre id="output" style="white-space: pre-wrap; border: 1px solid #ccc; padding: 10px; margin-top: 10px;"></pre>
+        <div class="main-container">
+            <h3>Azur Lane Stats</h3>
+            <button id="launch-python-script">Launch</button>
+            <button id="load-file">Load Table</button>
+            <div class="table-container"></div>
+            <pre id="output"></pre>
+        </div>
     </body>
     <script src="../js/renderer.js"></script>
 </html>
